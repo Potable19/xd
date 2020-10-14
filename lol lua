@@ -1,0 +1,9 @@
+local ps = game:GetService("Players")
+local lp = ps.LocalPlayer
+local char = lp.Character
+
+char.BodyEffects.Armor:Destroy()
+
+local Clone2 = Instance.new("NumberValue")
+Clone2.Name = "Armor"
+Clone2.Parent = char.BodyEffects
